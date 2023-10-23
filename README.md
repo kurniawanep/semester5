@@ -1,1 +1,3 @@
 # sistemPakar
+
+TUGAS PAK MARZUKI PERTEMUAN 5
