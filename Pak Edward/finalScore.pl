@@ -19,6 +19,7 @@ determineFinalScore(Grade, Predicate, Status) :-
     read(FinalTest),
     
     FinalScore is ((Presence * 10) + (Tasks * 20) + (MiddleTest * 30) + (FinalTest * 40)) / 100,
+    format('~nNilai Akhir : ~w~n', [FinalScore]),
     (
         FinalScore >= 80 -> (Grade = 'A', Predicate = 'Sangat Baik', Status = 'Lulus');
         FinalScore >= 70 -> (Grade = 'B', Predicate = 'Baik', Status = 'Lulus');
